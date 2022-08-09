@@ -3,7 +3,7 @@
 layout: single
 title:  "Ch3 Greed Algorithm"
 categories: Algorithm
-tag: [python, coding, algorithm, study]
+tag: [python, coding, algorithm, 이것이 코딩 테스트다]
 toc: true
 author_profile: false
 sidebar:

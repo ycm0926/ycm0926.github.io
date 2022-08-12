@@ -13,6 +13,13 @@ docs:
       - title: "Ch3 Greed Algorithm"
         url: /algorithm/algorithm-Ch3_Gread/
 
+docs:
+  - title: "Algorithm"
+    children:
+      - title: "Ch4 Implementation"
+        url: /algorithm/algorithm-Ch4_Implementation/
+
+
 # docs:
 #   - title: "대목차"
 #     children:

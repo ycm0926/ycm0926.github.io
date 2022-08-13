@@ -8,12 +8,19 @@ main:
     url: /search/
 
 docs:
-  - title: "Algorithm"
+  - title: "이것이 코딩 테스트다"
     children:
-      - title: "Ch3 Greed Algorithm"
-        url: /algorithm/algorithm-Ch3_Gread/
-      - title: "Ch4 Implementation"
-        url: /algorithm/algorithm-Ch4_Implementation/
+      - title: "Ch3 Greed Algorithm 3-1"
+        url: /algorithm/algorithm-Ch3_Gread_1/
+      - title: "Ch3 Greed Algorithm 3-2"
+        url: /algorithm/algorithm-Ch3_Gread_2/
+      - title: "Ch3 Greed Algorithm 3-3"
+        url: /algorithm/algorithm-Ch3_Gread_3/
+      - title: "Ch4 Implementation Algorithm 4-1"
+        url: /algorithm/algorithm-Ch4_Implementation_1/
+      - title: "Ch4 Implementation Algorithm 4-2"
+        url: /algorithm/algorithm-Ch4_Implementation_2/
+
 
 
 # docs:

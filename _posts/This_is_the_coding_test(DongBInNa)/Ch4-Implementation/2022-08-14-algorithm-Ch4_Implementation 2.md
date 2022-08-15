@@ -76,9 +76,57 @@ sidebar:
 ```python
 # 1. 나의 풀이
 
+import sys
 
+n, m = map(int, input().split())
+x, y, direction = map(int, input().split())
+
+# 이동 가능 모든 경우 북, 동, 남, 서 순서
+dx = [-1, 0, 1, 0]
+dy = [0, 1, 0, -1]
+# 바라보는 모든 경우
+d_direction = [0, 1, 2, 3]
+# 전체 맵 입력
+game_map = [list(map(int, input().split())) for _ in range(n)]
+# 현재 위치 방문처리
+game_map[x][y] = 2
+cnt = 1
+turn_p = 0
+# 맵 이탈 예외
+try: 
+    while True:
+        # 왼쪽 방향으로 회전
+        direction = d_direction[direction-1]
+        nx = x + dx[direction]
+        ny = y + dy[direction]
+        # 회전 후 갈 수 있는 곳인지 확인 후 이동
+        if game_map[nx][ny] == 0:
+            cnt += 1  # 방문 횟수 카운트
+            x = nx
+            y = ny
+            game_map[x][y] = 2  # 방문 기록
+            turn_p = 0  # 턴 포인트 0 으로 초기화
+            continue
+        # 갈수 없는 지역일 경우
+        else:
+            turn_p += 1
+            # 4방향 모두 확인한 경우
+            if turn_p == 4:
+                nx = x - dx[direction]
+                ny = y - dy[direction]
+                # 뒤로 갈 수 있다면 이동
+                if game_map[nx][ny] != 1:
+                    x = nx
+                    y = ny
+                    turn_p = 0
+                # 이동불가 (바다일 경우)
+                else:
+                    break
+except:
+    print('맵 이탈')
+    exit()
+print(cnt)
   
-
 
 # 2. 교재 풀이
 

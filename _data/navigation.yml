@@ -11,15 +11,15 @@ docs:
   - title: "이것이 코딩 테스트다"
     children:
       - title: "Ch3 Greed Algorithm 3-1"
-        url: /algorithm/algorithm-Ch3_Gread_1/
+        url: /algorithm/algorithm-Ch3-Gread-1/
       - title: "Ch3 Greed Algorithm 3-2"
-        url: /algorithm/algorithm-Ch3_Gread_2/
+        url: /algorithm/algorithm-Ch3-Gread-2/
       - title: "Ch3 Greed Algorithm 3-3"
-        url: /algorithm/algorithm-Ch3_Gread_3/
+        url: /algorithm/algorithm-Ch3-Gread-3/
       - title: "Ch4 Implementation Algorithm 4-1"
-        url: /algorithm/algorithm-Ch4_Implementation_1/
+        url: /algorithm/algorithm-Ch4-Implementation-1/
       - title: "Ch4 Implementation Algorithm 4-2"
-        url: /algorithm/algorithm-Ch4_Implementation_2/
+        url: /algorithm/algorithm-Ch4-Implementation-2/
 
 
 

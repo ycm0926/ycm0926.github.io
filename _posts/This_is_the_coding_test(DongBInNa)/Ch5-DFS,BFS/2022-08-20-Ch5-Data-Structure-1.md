@@ -1,0 +1,107 @@
+---
+
+layout: single
+title: "Ch5 Data Structure 5-1"
+categories: Algorithm
+tag: [python, coding, algorithm, 이것이 코딩 테스트다]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+
+---
+
+
+📚 구현 (Implementation) 알고리즘
+
+**탐색(Search)** 이란 <span style="background-color:#f1f8ff">많은 양의 데이터 중에서 원하는 데이터를 찾는 과정</span>을 의미한다. 프로그래밍에서는 그래프, 트리 등의 자료구조 안에서 탐색을 하는 문제를 자주 다룬다. 대표적인 탐색 알고리즘으로 DFS와 BFS를 꼽을 수 있는데 이 두 알고리즘의 원리를 제대로 이해해야 코딩 테스트의 탐색 문제 유형을 풀 수 있다. DFS와 BFS를 제대로 이해하려면 기본 자료구조인 스택과 큐에 대한 이해가 필요하다
+  
+**자료구조란(Data Structure)**<span style="background-color:#f1f8ff">'데이터를 표현하고 관리하고 처리하기 위한 구조'</span>를 의미한다. 그중 스택과 큐는 자료구조의 기초 개념으로 다음의 두 핵심적인 함수로 구성된다.
+
+삽입(push) : 데이터를 삽입한다.
+삭제(pop) : 데이터를 삭제한다.
+
+스택과 큐를 사용시 삽입,삭제 이외 오버플로와 언더플로도 고민해야한다.
+* **오버플로(Overflow)**:특정 자료구조가 수용할 수 있는 데이터의 크기를 이미 가득 찬 상태에서 삽입 연산 수행시 발생.
+* **언더플로(Underflow)**:특정 자료구조에 데이터가 전혀 들어 있지 않은 상태에서 삭제 연산 수행 수행시 발생.
+
+## **스택(Stack)**
+스택은 박스 쌓기에 비유할 수 있다. <span style="background-color:#f1f8ff">**후입선출(FILO)**</span> 구조이다.
+> * stack.top(): 스택의 가장 윗 데이터를 반환
+> * stack.pop(): 스택의 가장 윗 데이터를 삭제
+> * stack.push():스택의 가장 위(top) 자리 위에(top = top + 1) 메모리를 생성 후 데이터 x 넣기
+> * stack.empty(): 스택이 비었다면 1, 아니면 0을 반환
+```python
+stack = []
+
+stack.append(5)
+stack.append(2)
+stack.append(3)
+
+stack.pop()
+
+print(stack)
+# --> [5, 2]
+
+```
+
+## **큐(Queue)**
+큐는 대기 줄에 비유할 수 있다. <span style="background-color:#f1f8ff">**선입선출(FIFO)**</span> 구조이다.
+1. 큐 구현할 때는 collections 모듈에서 제공하는 deque 사용.
+2. deque는 스택과 큐 장점을 모두 채택한 것.
+3. 데이터를 넣고 빼는 속도가 리스트 자료형에 비해 효율적이며, queue 라이브러리 보다 간단함.
+4. 코딩 테스트에서도 collections 모듈과 같은 기본 라이브러리 사용을 허용.
+> * Enqueue: 큐 맨 뒤에 어떠한 요소 추가
+> * Dequeue: 큐 맨 앞쪽의 요소 삭제
+> * Peek: front에 위치한 데이터를 읽음
+> * front: 큐의 맨 앞의 위치 (인덱스)
+> *rear: 큐의 맨 뒤의 위치(인덱스)
+# 파이썬으로 큐를 구현 시 collections 
+
+```python
+from collections import deque
+
+# 큐 구현을 위해 deque 라이브러리 사용
+queue = deque(5)
+queue = deque(2)
+queue = deque(3)
+
+print(queue)
+# --> [2, 3]
+
+```
+
+## **재귀 함수**
+DFS, BFS를 구현하려면 재귀 함수도 이해하고 있어야 한다. 재귀함수 Recursive Function - <span style="background-color:#f1f8ff">자기 자신을 다시 호출하는 함수를 의미</span>한다.
+* 재귀 함수를 문제 풀이에서 사용할 때는 재귀 함수가 언제 끝날지, 종료 조건을 꼭 명시해야 한다. 조건이 명시되지 않으면 무한 호출 되며, 재귀의 최대 깊이를 초과하게 되면 오류가 난다.
+
+```python
+def recursive_function():
+    print("재귀 함수를 호출합니다.")
+    recursive_function()
+
+recursive_function()
+```
+
+### **팩토리얼 예제**
+```python
+# 반복적으로 구현한 n!
+def factorial_iterative(n):
+    result = 1
+    
+    # 1부터 n까지의 수를 차례대로 곱하기
+    for i in range(1, n+1):
+        result *= i
+    
+    return result
+
+# 재귀적으로 구현한 n!
+def factorial_recursive(n):
+    # n이 1 이하인 경우 1을 반환    
+    if n <=1:
+        return 1
+    # n! = n * (n-1)!를 그대로 코드로 작성
+    return n * factorial_recursive(n-1)
+
+```
+

@@ -56,9 +56,8 @@ print(stack)
 > * Dequeue: 큐 맨 앞쪽의 요소 삭제
 > * Peek: front에 위치한 데이터를 읽음
 > * front: 큐의 맨 앞의 위치 (인덱스)
-> *rear: 큐의 맨 뒤의 위치(인덱스)
+> * rear: 큐의 맨 뒤의 위치(인덱스)
 
-# 파이썬으로 큐를 구현 시 collections 
 
 ```python
 from collections import deque

@@ -27,10 +27,10 @@ sidebar:
 
 ## **스택(Stack)**
 스택은 박스 쌓기에 비유할 수 있다. <span style="background-color:#f1f8ff">**후입선출(FILO)**</span> 구조이다.
-> * stack.top(): 스택의 가장 윗 데이터를 반환
-> * stack.pop(): 스택의 가장 윗 데이터를 삭제
-> * stack.push():스택의 가장 위(top) 자리 위에(top = top + 1) 메모리를 생성 후 데이터 x 넣기
-> * stack.empty(): 스택이 비었다면 1, 아니면 0을 반환
+> 1. stack.top(): 스택의 가장 윗 데이터를 반환
+> 2. stack.pop(): 스택의 가장 윗 데이터를 삭제
+> 3. stack.push():스택의 가장 위(top) 자리 위에(top = top + 1) 메모리를 생성 후 데이터 x 넣기
+> 4. stack.empty(): 스택이 비었다면 1, 아니면 0을 반환
 
 ```python
 stack = []
@@ -48,15 +48,15 @@ print(stack)
 
 ## **큐(Queue)**
 큐는 대기 줄에 비유할 수 있다. <span style="background-color:#f1f8ff">**선입선출(FIFO)**</span> 구조이다.
-1. 큐 구현할 때는 collections 모듈에서 제공하는 deque 사용.
-2. deque는 스택과 큐 장점을 모두 채택한 것.
-3. 데이터를 넣고 빼는 속도가 리스트 자료형에 비해 효율적이며, queue 라이브러리 보다 간단함.
-4. 코딩 테스트에서도 collections 모듈과 같은 기본 라이브러리 사용을 허용.
-> * Enqueue: 큐 맨 뒤에 어떠한 요소 추가
-> * Dequeue: 큐 맨 앞쪽의 요소 삭제
-> * Peek: front에 위치한 데이터를 읽음
-> * front: 큐의 맨 앞의 위치 (인덱스)
-> * rear: 큐의 맨 뒤의 위치(인덱스)
+* 큐 구현할 때는 collections 모듈에서 제공하는 deque 사용.
+* deque는 스택과 큐 장점을 모두 채택한 것.
+* 데이터를 넣고 빼는 속도가 리스트 자료형에 비해 효율적이며, queue 라이브러리 보다 간단함.
+* 코딩 테스트에서도 collections 모듈과 같은 기본 라이브러리 사용을 허용.
+> 1. Enqueue: 큐 맨 뒤에 어떠한 요소 추가
+> 2. Dequeue: 큐 맨 앞쪽의 요소 삭제
+> 3. Peek: front에 위치한 데이터를 읽음
+> 4. front: 큐의 맨 앞의 위치 (인덱스)
+> 5. rear: 큐의 맨 뒤의 위치(인덱스)
 
 
 ```python

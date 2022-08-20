@@ -31,6 +31,7 @@ sidebar:
 > * stack.pop(): 스택의 가장 윗 데이터를 삭제
 > * stack.push():스택의 가장 위(top) 자리 위에(top = top + 1) 메모리를 생성 후 데이터 x 넣기
 > * stack.empty(): 스택이 비었다면 1, 아니면 0을 반환
+
 ```python
 stack = []
 
@@ -56,6 +57,7 @@ print(stack)
 > * Peek: front에 위치한 데이터를 읽음
 > * front: 큐의 맨 앞의 위치 (인덱스)
 > *rear: 큐의 맨 뒤의 위치(인덱스)
+
 # 파이썬으로 큐를 구현 시 collections 
 
 ```python

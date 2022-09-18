@@ -24,6 +24,12 @@ docs:
         url: /algorithm/Ch5-DFS,BFS-1/
       - title: "Ch5 DFS,BFS 5-2"
         url: /algorithm/Ch5-DFS,BFS-2/
+      - title: "Ch5 DFS,BFS 5-3"
+        url: /algorithm/Ch5-DFS,BFS-3/
+      - title: "Ch6 Sorting 6-1"
+        url: /algorithm/Ch6-Sorting-1/
+      - title: "Ch6 Sorting 6-2"
+        url: /algorithm/Ch6-Sorting-2/
 
 
 

@@ -30,6 +30,10 @@ docs:
         url: /algorithm/Ch6-Sorting-1/
       - title: "Ch6 Sorting 6-2"
         url: /algorithm/Ch6-Sorting-2/
+      - title: "Ch7 Binary Search 7-1"
+        url: /algorithm/Ch7-BinarySearch-1/
+      - title: "Ch7 Binary Search 7-2"
+        url: /algorithm/Ch7-BinarySearch-2/
 
 
 

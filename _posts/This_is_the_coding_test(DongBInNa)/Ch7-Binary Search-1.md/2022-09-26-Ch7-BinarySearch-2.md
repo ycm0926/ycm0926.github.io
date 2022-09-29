@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: "Ch7 Binary Search 7-2"
+title: "Ch7 BinarySearch 7-2"
 categories: Algorithm
 tag: [python, coding, algorithm, 이것이 코딩 테스트다]
 toc: true
@@ -135,6 +135,7 @@ for i in x:
 **3. 집합 자료형 이용**
   * 단순히 특정한 수가 한 번이라도 등장했는지를 검사하면 된다.
   * 소스코드가 간결한 측면에서 가장 우수 
+
 ```python
 
 # 교재 풀이

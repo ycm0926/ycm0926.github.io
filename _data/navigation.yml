@@ -31,16 +31,14 @@ docs:
       - title: "Ch6 Sorting 6-2"
         url: /algorithm/Ch6-Sorting-2/
       - title: "Ch7 Binary Search 7-1"
-        url: /algorithm/Ch7-BinarySearch-1/
+        url: /algorithm/Ch7-Binary Search-1/
       - title: "Ch7 Binary Search 7-2"
-        url: /algorithm/Ch7-BinarySearch-2/
-<<<<<<< HEAD
+        url: /algorithm/Ch7-Binary Search-2/
       - title: "Ch8 Dynamic Programing 8-1"
         url: /algorithm/Ch8-DynamicPrograming-1/
       - title: "Ch8 Dynamic Programing 8-2"
         url: /algorithm/Ch8-DynamicPrograming-2/
-=======
->>>>>>> parent of 2e0edade (update)
+
 
 
 

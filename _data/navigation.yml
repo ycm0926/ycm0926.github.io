@@ -14,8 +14,6 @@ docs:
         url: /algorithm/Ch3-Gread-1/
       - title: "Ch3 Greed 3-2"
         url: /algorithm/Ch3-Gread-2/
-      - title: "Ch3 Greed 3-3"
-        url: /algorithm/Ch3-Gread-3/
       - title: "Ch4 Implementation 4-1"
         url: /algorithm/Ch4-Implementation-1/
       - title: "Ch4 Implementation 4-2"
@@ -38,6 +36,8 @@ docs:
         url: /algorithm/Ch8-DynamicPrograming-1/
       - title: "Ch8 Dynamic Programing 8-2"
         url: /algorithm/Ch8-DynamicPrograming-2/
+      - title: "Ch9 Shortest Path 9-1"
+        url: /algorithm/Ch9-ShortestPath-1/
 
 
 

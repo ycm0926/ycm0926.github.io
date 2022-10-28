@@ -38,6 +38,8 @@ docs:
         url: /algorithm/Ch8-DynamicPrograming-2/
       - title: "Ch9 Shortest Path 9-1"
         url: /algorithm/Ch9-ShortestPath-1/
+      - title: "Ch9 Shortest Path 9-2"
+        url: /algorithm/Ch9-ShortestPath-2/
 
 
 

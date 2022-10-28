@@ -11,7 +11,6 @@ sidebar:
 
 ---
 
-
 # 📚 최단 경로 (Shortest Path) 알고리즘
 
 **최단 경로 (Shortest Path)** 알고리즘 이란 <span style="background-color:#baddfe">말 그대로 가장 짧은 경로를 찾는 알고리즘이다.</span>

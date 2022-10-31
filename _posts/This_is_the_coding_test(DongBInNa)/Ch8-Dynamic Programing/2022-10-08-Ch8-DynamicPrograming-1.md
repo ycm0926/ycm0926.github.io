@@ -11,7 +11,7 @@ sidebar:
 
 ---
 
-# 📚 동적 프로그레밍 (Dynamic Programing)) 알고리즘
+# 📚 동적 프로그레밍 (Dynamic Programing) 알고리즘
 
 **동적 프로그래밍 (Dynamic Programing)** 이란 <span style="background-color:#baddfe">메모리를 적절히 사용하여 수행 시간 효율성을 비약적으로 향상시키는 방법.</span>
 * 이미 계산된 결과(작은 문제)는 별도의 메모리 영역에 저장하여 다시 계산하지 않도록 함.

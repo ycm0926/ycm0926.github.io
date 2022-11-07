@@ -319,6 +319,7 @@ def topology_sort():
         now = q.popleft()
         # 해당 원소와 연결된 노드들의 진입차수에서 1 빼기
         for i in graph[now]:
+            # 동시에 여러 강의가 가능하므로 max를 통해 가장 긴 시간이 걸리는 값을 찾는다
             result[i] = max(result[i], result[now] + time[i])
             indegree[i] -= 1
             # 새롭게 진입차수가 0이 되는 노드를 큐에 삽입

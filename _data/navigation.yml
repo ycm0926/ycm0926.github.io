@@ -11,40 +11,45 @@ docs:
   - title: "이것이 코딩 테스트다"
     children:
       - title: "Ch3 Greedy 3-1"
-        url: /algorithm/Ch3-Greedy-1/
+        url: /Algorithm/Ch3-Greedy-1/
       - title: "Ch3 Greedy 3-2"
-        url: /algorithm/Ch3-Greedy-2/
+        url: /Algorithm/Ch3-Greedy-2/
       - title: "Ch4 Implementation 4-1"
-        url: /algorithm/Ch4-Implementation-1/
+        url: /Algorithm/Ch4-Implementation-1/
       - title: "Ch4 Implementation 4-2"
-        url: /algorithm/Ch4-Implementation-2/
+        url: /Algorithm/Ch4-Implementation-2/
       - title: "Ch5 DFS,BFS 5-1"
-        url: /algorithm/Ch5-DFS,BFS-1/
+        url: /Algorithm/Ch5-DFS,BFS-1/
       - title: "Ch5 DFS,BFS 5-2"
-        url: /algorithm/Ch5-DFS,BFS-2/
+        url: /Algorithm/Ch5-DFS,BFS-2/
       - title: "Ch5 DFS,BFS 5-3"
-        url: /algorithm/Ch5-DFS,BFS-3/
+        url: /Algorithm/Ch5-DFS,BFS-3/
       - title: "Ch6 Sorting 6-1"
-        url: /algorithm/Ch6-Sorting-1/
+        url: /Algorithm/Ch6-Sorting-1/
       - title: "Ch6 Sorting 6-2"
-        url: /algorithm/Ch6-Sorting-2/
+        url: /Algorithm/Ch6-Sorting-2/
       - title: "Ch7 Binary Search 7-1"
-        url: /algorithm/Ch7-BinarySearch-1/
+        url: /Algorithm/Ch7-BinarySearch-1/
       - title: "Ch7 Binary Search 7-2"
-        url: /algorithm/Ch7-BinarySearch-2/
+        url: /Algorithm/Ch7-BinarySearch-2/
       - title: "Ch8 Dynamic Programing 8-1"
-        url: /algorithm/Ch8-DynamicPrograming-1/
+        url: /Algorithm/Ch8-DynamicPrograming-1/
       - title: "Ch8 Dynamic Programing 8-2"
-        url: /algorithm/Ch8-DynamicPrograming-2/
+        url: /Algorithm/Ch8-DynamicPrograming-2/
       - title: "Ch9 Shortest Path 9-1"
-        url: /algorithm/Ch9-ShortestPath-1/
+        url: /Algorithm/Ch9-ShortestPath-1/
       - title: "Ch9 Shortest Path 9-2"
-        url: /algorithm/Ch9-ShortestPath-2/
+        url: /Algorithm/Ch9-ShortestPath-2/
       - title: "Ch10 Graph Theory 10-1"
-        url: /algorithm/Ch10-GraphTheory-1/
+        url: /Algorithm/Ch10-GraphTheory-1/
       - title: "Ch10 Graph Theory 10-2"
-        url: /algorithm/Ch10-GraphTheory-2/
+        url: /Algorithm/Ch10-GraphTheory-2/
 
+docs:
+  - title: "Solved.ac - Class 3"
+    children:
+      - title: "1676. 팩토리얼 0의 개수"
+        url: /algorithm/Ch10-GraphTheory-2/BOJ/Solved.ac/CLASS3/1676_팩토리얼 0의 개수.md
 
 
 # docs:

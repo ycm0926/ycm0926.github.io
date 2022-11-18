@@ -44,10 +44,10 @@ docs:
         url: /Algorithm/Ch10-GraphTheory-1/
       - title: "Ch10 Graph Theory 10-2"
         url: /Algorithm/Ch10-GraphTheory-2/
-  - title: "Solved.ac - Class 3"
-    children:
-      - title: "1676. 팩토리얼 0의 개수"
-        url: /BOJ/Solved.ac/CLASS3/1676_팩토리얼0의개수/
+  # - title: "Solved.ac - Class 3"
+  #   children:
+  #     - title: "1676. 팩토리얼 0의 개수"
+  #       url: /BOJ/Solved.ac/CLASS3/1676_팩토리얼0의개수/
 
 
 # docs:

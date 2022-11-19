@@ -313,7 +313,7 @@ else:
 * 신장 트리가 아닌 부분은 1번 노드가 포함되어 있지 않으며, 사이클이 존재한다.
 
 ---
-* <u>최소한의 비용으로 구성되는 신장 트리를 찾아야 할 때</u> 어떻게 할까?
+* **<u>최소한의 비용으로 구성되는 신장 트리를 찾아야 할 때</u> 어떻게 할까?**
 * 예를 들어 N개의 도시가 존재하는 상황에서 두 도시 사이에 도로를 놓아 **전체 도시가 서로 연결**될 수 있는 도로를 설치하는 경우를 생각한다.
   * 두 도시 A, B를 선택했을 때 A에서 B로 이동하는 경로가 반드시 존재하도록 도로를 설치
 
@@ -358,16 +358,16 @@ else:
 
 ```python
 # 특정 원소가 속한 집합을 찾기
-def find_parent(parent, x):
+def find_parent(x):
     # 루트 노드를 찾을 때까지 재귀 호출
     if parent[x] != x:
-        parent[x] = find_parent(parent, parent[x])
+        parent[x] = find_parent(parent[x])
     return parent[x]
 
 # 두 원소가 속한 집합을 합치기
-def union_parent(parent, a, b):
-    a = find_parent(parent, a)
-    b = find_parent(parent, b)
+def union_parent(a, b):
+    a = find_parent(a)
+    b = find_parent(b)
     if a < b:
         parent[b] = a
     else:
@@ -398,8 +398,8 @@ edges.sort()
 for edge in edges:
     cost, a, b = edge
     # 사이클이 발생하지 않는 경우에만 집합에 포함
-    if find_parent(parent, a) != find_parent(parent, b):
-        union_parent(parent, a, b)
+    if find_parent(a) != find_parent(b):
+        union_parent(a, b)
         result += cost
 
 print(result)

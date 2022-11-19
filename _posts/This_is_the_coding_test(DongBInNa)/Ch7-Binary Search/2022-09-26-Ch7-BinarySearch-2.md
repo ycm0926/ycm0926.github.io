@@ -2,7 +2,7 @@
 
 layout: single
 title: "Ch7 Binary Search 7-2"
-categories: Algorithm
+categories: algorithm
 tag: [python, coding, algorithm, 이것이 코딩 테스트다]
 toc: true
 author_profile: false

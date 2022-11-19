@@ -2,7 +2,7 @@
 
 layout: single
 title: "Ch8 Dynamic Programing 8-2"
-categories: Algorithm
+categories: algorithm
 tag: [python, coding, algorithm, 이것이 코딩 테스트다]
 toc: true
 author_profile: false

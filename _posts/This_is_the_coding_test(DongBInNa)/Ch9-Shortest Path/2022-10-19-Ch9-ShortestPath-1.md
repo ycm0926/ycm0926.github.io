@@ -2,8 +2,8 @@
 
 layout: single
 title: "Ch9 Shortest Path 9-1"
-categories: algorithm
-tag: [python, coding, algorithm, 이것이 코딩 테스트다]
+categories: Algorithm
+tag: [Python, Algorithm, 이것이 코딩 테스트다]
 toc: true
 author_profile: false
 sidebar:
@@ -244,11 +244,11 @@ print(result)
 * Python, C++, Java를 포함한 대부분의 프로그래밍 언어에서 **표준 라이브러리 형태로 지원**한다.
 * 파이썬은 PriorityQueue 라는 라이브러리를 제공하여 코드는 간략해 지지만 속도가 매우 느리다.
 
-|자료구조|추출되는 데이터|
-|---|---|
-|스택(Stack)|가장 나중에 삽입된 데이터|
-|큐(Queue)|가장 먼저 삽입된 데이터|
-|우선순위 큐(Priority)|가장 우선순위가 높은 데이터|
+| 자료구조              | 추출되는 데이터             |
+| --------------------- | --------------------------- |
+| 스택(Stack)           | 가장 나중에 삽입된 데이터   |
+| 큐(Queue)             | 가장 먼저 삽입된 데이터     |
+| 우선순위 큐(Priority) | 가장 우선순위가 높은 데이터 |
 
 ### 다익스트라 알고리즘: 우선순위 큐 동작 과정
 ![우선순위큐](/assets/images/ch-09-우선순위큐.png)

@@ -44,10 +44,13 @@ docs:
         url: /algorithm/Ch10-GraphTheory-1/
       - title: "Ch10 Graph Theory 10-2"
         url: /algorithm/Ch10-GraphTheory-2/
-  - title: "BOJ"
-    children:
-      - title: "[Bronze I] 분수찾기 - 1193"
-        url: /boj/1193.분수찾기/
+  - title: "Algorithm"
+    - title: "BOJ"
+      children:
+        - title: "[Bronze I] 분수찾기 - 1193"
+          url: /boj/1193.분수찾기/
+        - title: "임시요"
+          url: /boj/임시/
 
 
 

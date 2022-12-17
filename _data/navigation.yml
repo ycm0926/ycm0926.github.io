@@ -50,6 +50,11 @@ docs:
       - title: "[백준] [Bronze I] 분수찾기 - 1193 (파이썬 / Python)"
         url: /boj/1193.분수찾기/
 
+  - title: "Blog"
+    children:
+      - title: "유데미(Udemy) The Web Developer 부트캠프 2023 강의 수강"
+        url: /Blog/udemy01/
+
 
 
 

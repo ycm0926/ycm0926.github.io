@@ -296,6 +296,7 @@ def dijkstra(start):
     distance[start] = 0
     while q: # 큐가 비어있지 않다면
         # 가장 최단 거리가 짧은 노드에 대한 정보 꺼내기
+        # dist = 현재 확인하고 있는 노드까지의 거리값
         dist, now = heapq.heappop(q)
         # 현재 노드가 이미 처리된 적이 있는 노드라면 무시
         # 값이 작다는 것은 이미 처리되어 최소 값이 들어가 있다는 의미

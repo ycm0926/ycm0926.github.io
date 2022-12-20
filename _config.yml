@@ -139,10 +139,10 @@ footer:
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "/assets/logo.ico/githubside.png"
       url: "https://github.com/ycm0926"
     - label: "GitLab"
-      icon: "/assets/logo.ico/favicon-16x16.png"
+      icon: "fab fa-fw fa-gitlab"
       # url:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"

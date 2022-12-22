@@ -63,6 +63,7 @@ small,
   font-size: $type-size-6;
 }
 
+
 p {
   margin-bottom: 1.3em;
 }
@@ -70,7 +71,7 @@ p {
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid $text-color;
+  border-bottom: 1px solid $primary-color;
 
   a {
     color: inherit;
@@ -96,7 +97,7 @@ fieldset {
   widows: 3;
 }
 
-/* abbreviations */
+/* abbreviations 약자(마우스를 약자에 올려두면 뜨는 문구) */
 
 abbr[title],
 abbr[data-original-title] {
@@ -105,7 +106,7 @@ abbr[data-original-title] {
   border-bottom: 1px dotted $text-color;
 }
 
-/* blockquotes */
+/* blockquotes 인용문*/
 
 blockquote {
   margin: 2em 1em 2em 0;

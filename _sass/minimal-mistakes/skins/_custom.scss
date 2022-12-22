@@ -2,20 +2,36 @@
    Custom skin
    ========================================================================== */
 
-
+//  $background-color: #373C3F !default;
+//  $text-color: #eaeaea !default;
+//  $primary-color: #FFBF00 !default;
+//  $border-color: mix(#fff, $background-color, 20%) !default;
+//  $code-background-color: #4D5357 !default;
+//  $code-background-color-dark: #3F4447 !default;
+//  $form-background-color: mix(#000, $background-color, 15%) !default;
+//  $footer-background-color: mix(#000, $background-color, 20%) !default;
+//  $link-color: mix(#00adb5, $text-color, 40%) !default;
+//  $link-color-hover: mix(#fff, $link-color, 25%) !default;
+//  $link-color-visited: mix(#00adb5, $text-color, 40%) !default;
+//  $masthead-link-color: $text-color !default;
+//  $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+//  $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 /* Colors */
-$background-color: #292D3E !default;
-$text-color: #fff !default;
-$muted-text-color: #A6ACC3 !default;
-$primary-color: #1B1E2B !default;
-$border-color: mix(#fff, #393e46, 75%) !default;
-/*뭐지?*/
-$footer-background-color: $primary-color !default;
-$link-color: #89DDFF !default;
+$background-color: #292D3E !default; // 배경색
+$text-color: #eaeaea !default; // 폰트색
+$muted-text-color: #fff !default; // 최근 포스트, 날짜, 태그색
+$primary-color: #82DCFF !default; // 우상단 메뉴, 인용문색
+$border-color: mix(#fff, $primary-color, 25%) !default; // 경계색
+$code-background-color: #4D5357 !default; // 인라인코드 배경색
+$code-background-color-dark: #473f3f !default; // 야간모드색
+$form-background-color: mix(#000, $background-color, 15%) !default; // 뭐지?
+$footer-background-color: mix(#000, $background-color, 20%) !default; // 하단색
+$link-color: #82DCFF !default; // 하이퍼링크색
+$link-color-hover: mix(#fff, $link-color, 40%) !default; // 링크에 마우스를 올린색
+$link-color-visited: $link-color !default;
 $masthead-link-color: $text-color !default;
-$masthead-link-color-hover: $text-color !default;
-/*뭐지?*/
-$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+$masthead-link-color-hover: mix(#000, $text-color, 20%) !default; // 상단 링크에 마우스를 올린색
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default; // 뭐지?
 
 .page__footer {
   color: #A6ACC3 !important; // override
@@ -23,4 +39,8 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 .page__footer-follow .social-icons .svg-inline--fa {
   color: inherit;
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
 }

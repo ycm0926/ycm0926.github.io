@@ -10,16 +10,19 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: $background-color;
-  font-size: 14px;
+  font-size: 10px;
 
+  /* 본문 사이즈? */
   @include breakpoint($medium) {
-    font-size: 18px;
+    font-size: 14px;
   }
 
+  /* 마크다운문법 헤더사이즈? */
   @include breakpoint($large) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
+  /* 제목 사이즈 */
   @include breakpoint($x-large) {
     font-size: 18px;
   }

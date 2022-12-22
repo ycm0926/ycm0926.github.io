@@ -154,10 +154,11 @@ $max-width: $x-large !default;
 
 /*
    Grid
+   창이 좁을 때, 보통, 넓을 때
    ========================================================================== */
 
 $right-sidebar-width-narrow: 100px !default; // 200
-$right-sidebar-width: 200px !default; // 300 본문간격 사이즈
+$right-sidebar-width: 200px !default; // 300 
 $right-sidebar-width-wide: 250px !default; // 400
 
 /*

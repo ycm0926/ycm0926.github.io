@@ -59,6 +59,8 @@ docs:
     children:
       - title: "TIL - TWD HTML:기초"
         url: /TIL/Udemy-TIL-01/
+      - title: "TIL - TWD HTML:시맨틱(Semantics)"
+        url: /TIL/Udemy-TIL-02/
 
 
 # docs:

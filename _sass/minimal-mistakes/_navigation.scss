@@ -503,7 +503,7 @@
 /*
      Table of contents navigation
      ========================================================================== */
-
+// 토글 관련
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
@@ -517,7 +517,7 @@
     color: #fff;
     font-size: $type-size-6;
     /*background: $primary-color;*/
-    background: mix(#000, $primary-color, 20%);
+    background: mix(#000, $border-color, 20%);
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }

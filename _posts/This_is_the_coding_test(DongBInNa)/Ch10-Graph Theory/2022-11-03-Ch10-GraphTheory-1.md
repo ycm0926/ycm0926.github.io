@@ -5,6 +5,7 @@ title: "Ch10 Graph Theory 10-1"
 categories: Algorithm
 tag: [Python, Algorithm, 이것이 코딩 테스트다]
 toc: true
+toc_sticky: true
 author_profile: false
 sidebar:
     nav: "docs"
@@ -113,8 +114,12 @@ v, e = map(int, input().split())
 parent = [0] * (v + 1) # 부모 테이블 초기화
 
 # 부모 테이블상에서, 부모를 자기 자신으로 초기화
+for i in range(1, v+1):
+	parent[i] = i
+
+# Union 연산을 각각 수행
 for i in range(e):
-  a, b = map(int, input().split())
+	a, b = map(int, input().split())
   union_parent(parent, a, b)
  
 # 각 원소가 속한 집합 출력
@@ -274,7 +279,7 @@ parent = [0] * (v + 1) # 부모 테이블 초기화히기
 
 # 부모 테이블상에서, 부모를 자기 자신으로 초기화
 for i in range(1, v + 1):
-    parentt[i] = i
+    parent[i] = i
 
 cycle = False # 사이클 발생 여부
 

@@ -5,6 +5,7 @@ title:  "TIL - TWD HTML:시맨틱(Semantics)"
 categories: TIL
 tag: [TIL,유데미 - The Web Developer 부트캠프 2023]
 toc: true
+toc_sticky: true
 author_profile: false
 sidebar:
     nav: "docs"
@@ -17,25 +18,25 @@ sidebar:
 
 (시멘틱 마크업 종류는 엄청 다양하지만, 주로 사용되는 몇 가지 태그에 대해서만 다뤘습니다.)
 
-## 1. 블록 vs 인라인 요소 - [Div](https://developer.mozilla.org/ko/docs/Web/HTML/Element/div)(Division)와 [Span](https://developer.mozilla.org/ko/docs/Web/HTML/Element/span)
+## 1. 블록 vs 인라인 요소 - [div](https://developer.mozilla.org/ko/docs/Web/HTML/Element/div)(Division)와 [span](https://developer.mozilla.org/ko/docs/Web/HTML/Element/span)
 
-### Div
+### 블록 요소 div
 
 * `<div>` 요소는 "순수" 컨테이너로서 블록 수준 요소이며 아무것도 표현하지 않는다.
 * 대신 다른 요소 여럿을 묶어 class나 id 속성으로 꾸미기 쉽도록 돕거나, 문서의 특정 구역이 다른 언어임을 표시(lang 속성 사용)하는 등의 용도로 사용할 수 있다.
 * `<div>` 요소는 의미를 가진 다른 요소(`<article>`, `<nav>` 등)가 적절하지 않을 때만 사용해야 한다.
 * 아무런 태그 언급 없이 바로'#'을 사용하면 자동으로 div태그가 사용된다.
 
-### Span
+### 인라인 요소 span
 
 * `<span>` 요소는 구문 콘텐츠를 위한 통용 인라인 컨테이너로, 본질적으로는 아무것도 나타내지 않는다.
 * 스타일을 적용하기 위해서, 또는 lang 등 어떤 특성의 값을 서로 공유하는 요소를 묶을 때 사용할 수 있다.
 * 적절한 의미를 가진 다른 요소가 없을 때에만 사용해야 한다. 
 * `<span>`은 `<div>`와 매우 유사하지만, `<div>`는 블록 레벨 요소인 반면 `<span>`은 인라인 요소다.
 
-## 2. 기타요소 [hr](https://developer.mozilla.org/ko/docs/Web/HTML/Element/hr),[br](https://developer.mozilla.org/ko/docs/Web/HTML/Element/br),[sup](https://developer.mozilla.org/ko/docs/Web/HTML/Element/sup),[sub](https://developer.mozilla.org/ko/docs/Web/HTML/Element/sub)
+## 2. 기타 요소 [hr](https://developer.mozilla.org/ko/docs/Web/HTML/Element/hr),[br](https://developer.mozilla.org/ko/docs/Web/HTML/Element/br),[sup](https://developer.mozilla.org/ko/docs/Web/HTML/Element/sup),[sub](https://developer.mozilla.org/ko/docs/Web/HTML/Element/sub)
 
-### hr 
+### 가로 선 hr 
 
 * `<hr>` 요소는 스크린을 수평으로 가로지르는 선을 하나 만들어 나누어 문단 사이 공백이나 문단 레벨 요소들 사이의 공백을 의미한다.
 * 색과 모양 등 다양한 커스텀이 가능하다.
@@ -43,7 +44,7 @@ sidebar:
 ![hr](/assets/images/Udemy/02/udemy02_hr.PNG)
 
 
-### br 줄바꿈 요소
+### 줄바꿈 요소 br
 
 * `<br>` 요소는 텍스트 안에 줄바꿈을 생선한다. 
 * 주소나 시조 등 줄의 구분이 중요한 내용을 작성할 때 유용하다.
@@ -51,7 +52,7 @@ sidebar:
 ![br](/assets/images/Udemy/02/udemy02_br.PNG)
 
 
-### Sup 위 첨자 요소, Sub 아래 첨자 요소
+### sup 위 첨자 요소, sub 아래 첨자 요소
 
 *  `<sup>` 요소는 활자 배치를 위 첨자로 해야 하는 인라인 텍스트다.
 *  `<sub>` 요소는 활자 배치를 아래 첨자로 해야 하는 인라인 텍스트를 지정합니다.
@@ -86,7 +87,7 @@ sidebar:
   * HTML 문서의 소개 및 탐색에 도움을 주는 콘텐츠 [`<header>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/header)
   * HTML 문서의 꼬릿말로 [`<footer>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/footer) 사용
   * 문서 [`<body>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/body) 의 주요 콘텐츠의 [`<main>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/main) 사용
-  * 시간의 특정 지점 또는 구간 [`<deatetime>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/time) 사용
+  * 시간의 특정 지점 또는 구간 [`<time>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/time) 사용
     * 속성으로 datetime을 명시해야 한다.
   * 삽화나 다이어그램, 사진 등과 같이 문서의 주요 흐름과는 독립적인 콘텐츠를 정의할 때 [`<figure>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/figure) 사용
   * HTML 문서의 전체적인 내용과 관련이 있는 콘텐츠들의 집합인 [`<section>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/section) 사용

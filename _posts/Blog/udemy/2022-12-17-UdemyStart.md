@@ -5,6 +5,7 @@ title:  "유데미(Udemy) The Web Developer 부트캠프 2023 강의 수강"
 categories: Blog
 tag: [Blog]
 toc: true
+toc_sticky: true
 author_profile: false
 sidebar:
     nav: "docs"

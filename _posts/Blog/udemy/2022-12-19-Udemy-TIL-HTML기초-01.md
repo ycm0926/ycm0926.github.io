@@ -5,6 +5,7 @@ title:  "TIL - TWD HTML:기초"
 categories: TIL
 tag: [TIL,유데미 - The Web Developer 부트캠프 2023,HTML]
 toc: true
+toc_sticky: true
 author_profile: false
 sidebar:
     nav: "docs"

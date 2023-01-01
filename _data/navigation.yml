@@ -62,10 +62,11 @@ docs:
   - title: "TIL"
     children:
       - title: "TIL - TWD HTML:기초"
-        url: /TIL/Udemy-TIL-01/
+        url: /TIL/Udemy-TIL-HTML기초-01/
       - title: "TIL - TWD HTML:시맨틱(Semantics)"
-        url: /TIL/Udemy-TIL-02/
-
+        url: /TIL/Udemy-TIL-HTML시맨틱-02/
+      - title: "TIL - TWD HTML:폼과 테이블"
+        url: /TIL/Udemy-TIL-HTML폼과테이블-03/
 
 # docs:
 #   - title: "대목차"

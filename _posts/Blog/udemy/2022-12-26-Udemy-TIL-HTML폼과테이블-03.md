@@ -68,8 +68,8 @@ sidebar:
 * `<label>`은 사용자 인터페이스 항목의 설명을 나타낸다.
 * for 속성을 사용해서 `<label>` 을 `<input>` 요소와 연결해준다.
 * `<label>` 을 `<input>` 요소와 연결하면 몇 가지 이점이 있다.
-  * 1. label 텍스트는 텍스트 입력과 시각적으로 관련이 있을 뿐만 아니라 화면리더기(screenreader) 는 폼 입력(form input)에서 label을 읽어서 보조기술(assistive technology) 사용자가 입력해야하는 텍스트가 무엇인지 더 쉽게 이해할 수 있어서 프로그래밍 적으로도 관련이 있다.
-  * 2. 관련 label 을 클릭해서 input 자체에 초점을 맞추거나 활성화를 시킬 수 있다. (활성되어서)늘어난 누를 수 있는 영역(hit area)은 터치스크린 사용자를 포함해 입력하려 하는 모든 사람에게 이점을 준다.
+  * 1) label 텍스트는 텍스트 입력과 시각적으로 관련이 있을 뿐만 아니라 화면리더기(screenreader) 는 폼 입력(form input)에서 label을 읽어서 보조기술(assistive technology) 사용자가 입력해야하는 텍스트가 무엇인지 더 쉽게 이해할 수 있어서 프로그래밍 적으로도 관련이 있다.
+  * 2) 관련 label 을 클릭해서 input 자체에 초점을 맞추거나 활성화를 시킬 수 있다. (활성되어서)늘어난 누를 수 있는 영역(hit area)은 터치스크린 사용자를 포함해 입력하려 하는 모든 사람에게 이점을 준다.
 * `<label>` 을 `<input>` 요소와 연관시키려면, `<input>` 에 **<u>id속성</u>**을 넣어야 한다.
 * 한 페이지에 한 개의 요소만 지정된 id를 지녀야 한다. 즉, 사용한 id요소는 똑같은 이름으로 재사용하면 안 된다.
 * `<label>` 안에 `<input>` 요소를 넣어 작성이 가능하지만 중첩하지 않는 게 표준이고 스타일을 각각 할 수 없어 잘 사용하지 않는다.
@@ -106,6 +106,8 @@ sidebar:
 ![input](/assets/images/Udemy/03/udemy03_input2.PNG)
 
 ### [checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox), [radio](https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/radio), [select](https://developer.mozilla.org/ko/docs/Web/HTML/Element/select)
+
+(input:checkbox, input:radio 로 바로 생성 가능)
 
 **checkbox**
 * `<input type="checkbox">`는 공식 정부 문서 양식에서 볼 수 있는 것처럼 활성화될 때 체크(체크)되는 상자로 기본적으로 렌더링된다.

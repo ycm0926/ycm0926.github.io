@@ -1,0 +1,91 @@
+---
+
+layout: single
+title:  "TIL - TWD CSS:기초"
+categories: TIL
+tag: [TIL,유데미 - The Web Developer 부트캠프 2023,CSS]
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar:
+    nav: "docs"
+
+---
+
+# CSS(Cascading Style Sheets) 기초
+
+<p data-ke-size="size14"><i>본 내용은 'The Web Developer 부트캠프 2023', 'Mozilla Developer Network'를 참고하여 작성했습니다.</i></p>
+
+## 1. CSS 적용 방법 3가지
+
+* **1) HTML 요소에 직접 스타일을 작성하는 인라인(Inline CSS) 방법**
+  * `<body>`태그 하위의 필요한 부분에 사용하면 된다.
+  * **<u>절대 좋은 방법이 아니며,</u>** 반복하려면 매번 복사해서 따로 변경해야 하므로 파일이 커지면 유지보수가 어렵고, 로딩되는 시간을 오래 걸리게 한다.
+
+* **2) `<style>` 요소를 HTML 내부(Embedded CSS)에 작성하는 방법**
+  * `<head>` 태그 하위의 모든 HTML 페이지에 적용된다.
+  * 앞선 접근 방식의 각 요소에 스타일을 넣는 방법을 개선한 방법이지만 내 웹 사이트의 여러 문서나 페이지에 동일한 스타일을 적용할 경우 여전히 각각 복사해야 하는 문제가 있기 때문에 **<u>추천하지 않는 방식이다.</u>**
+
+* **3) 외부(External CSS) 즉, 새 CSS파일 에서 스타일을 작성하는 방법**
+  * **<u>가장 추천 하는 방법이며</u>**, `<head>`태그에 [link](https://developer.mozilla.org/ko/docs/Web/HTML/Element/link) 라는 요소를 사용해서 연결해야 한다.
+
+* 우선 순위는 Inline > Embedded > External 순서다.
+
+![css](/assets/images/Udemy/04/udemy04_css.PNG)
+
+
+## 2. CSS 색상 적용 대표적인 방법 4가지
+
+* 1) 이름
+  * 색상의 이름을 직접 써서 컬러를 지정할 수 있다.
+  * 색상을 사용하려면 이름을 외우고 있어야 한다.
+
+* 2) RGB or RGBA
+  * RGB는 Red, Green, Blue 세 가지 색상을 0 ~ 255 사이의 숫자로 표현한다.
+  * RGBA는 RGB에서 A(alpha)는 불투명도를 지정할 수 있다. 불투명도는 0(0%) ~ 1(100%) 불투명을 의미한다. 
+
+* 3) 16진수
+  * `#`으로 시작하여 2자리씩 3개의 16진수(00 ~ FF)로 색상을 표현한다.
+  * 각 2자리는 앞에서부터 R,G,B를 의미한다. (00 ~ FF는 십진수로 0 ~ 255를 의미한다.)
+
+* 4) HSL or HSLA
+  * HSL은 색상, 채도, 명도를 나타낸다.
+  * 색상(Hue)
+    * 360도의 색상환으로 나타낸다.
+    * 0도는 빨강, 120도는 초록, 240은 파랑이다.
+  * 채도(Saturation)
+    * 채도(Saturation)은 0~100%로 표현된다.
+    * 0일수록 채도가 낮고, 100이 채도가 가장 높다.
+  * 명도(Lightness)
+    * 명도(Lightness)는 0~100%로 표현한다.
+    * 0은 검정, 100은 흰색이다.
+  * RGBA와 마찬가지로 불투명도를 지정할 수 있다.
+
+## 3. CSS Text 속성
+
+* [text-align](https://developer.mozilla.org/ko/docs/Web/CSS/text-align) 텍스트 위치 변경
+  * left, right, center, justify 등
+* [font-weight](https://developer.mozilla.org/ko/docs/Web/CSS/font-weight) 폰트 두께 변경
+  * normal: 400, bold: 700 등
+* [text-decoration](https://developer.mozilla.org/ko/docs/Web/CSS/text-decoration) 텍스트를 꾸미는 선
+  * uderline, underline dotted, overline 등
+  * text-decoration: none;(없음)은 밑줄을 제거해준다.
+* [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) 줄 간격 변경
+  * normal, 2.5, 3em, 150%, 32px 등
+* [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) 텍스트 사이 간격 변경
+  * normal, .2rem, 1px, -1px 등
+* [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) 텍스트 크기 변경
+  * 1.2em, x-small, smaller, 12px, 80% 등
+* [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) 폰트 변경
+  * 폰트는 OS, 브라우저에 따라 없을 수도 있고, 반영되는 부분이 다를 수 있다.
+  * 보통 1~2개의 백업을 둔다.
+  * 쉼표로 구분되어 순위를 가지며, 지원되지 않는 경우 후보 폰트가 반영된다.
+* 간격이나 사이즈 등 여러 단위들은 대부분 잘 사용하지 않는 단위다.
+
+<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="eYjBxee" data-preview="true" data-editable="true" data-user="ycm0926" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ycm0926/pen/eYjBxee">
+  Untitled</a> by Changmin Yang (<a href="https://codepen.io/ycm0926">@ycm0926</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+

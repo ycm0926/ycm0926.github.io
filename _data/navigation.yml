@@ -69,6 +69,8 @@ docs:
         url: /TIL/Udemy-TIL-HTML시맨틱-02/
       - title: "TIL - TWD HTML:폼과 테이블"
         url: /TIL/Udemy-TIL-HTML폼과테이블-03/
+      - title: "TIL - TWD CSS기초"
+        url: /TIL/Udemy-TIL-CSS기초-01/
 
 # docs:
 #   - title: "대목차"

@@ -200,4 +200,28 @@ div {
   * root em은 html의 글씨 크기에 따라 비례한다.
   * 보통 예측하기 편해서 em보다 많이 사용한다.
 
+```css
+#em {
+    font-size: 15px;
+}
+
+#rem {
+    font-size: 15px;
+}
+
+#em ul {
+    font-size: 1.5em;
+    padding: 2em 2em;
+    background-color: aquamarine;
+    color: violet;
+}
+
+#rem ul {
+    font-size: 1.5rem;
+    padding: 2rem 2rem;
+    background-color: aquamarine;
+    color: violet;
+}
+```
+
 ![em,rem](/assets/images/Udemy/06/udemy06_em,rem.PNG)

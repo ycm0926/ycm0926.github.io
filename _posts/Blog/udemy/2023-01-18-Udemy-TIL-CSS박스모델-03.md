@@ -68,6 +68,7 @@ div {
 ## 2. [박스 모델:패딩](https://developer.mozilla.org/ko/docs/Web/CSS/padding)
 
 * 개발자 도구 초록박스 -> padding 값  
+   ![cssbutton](/assets/images/Udemy/06/udemy06_toolbox.PNG)
 * padding은 content와 border 사이의 공간
 * 시계 방향으로 한 번에 작성이 가능하다.
 
@@ -97,8 +98,9 @@ div {
 
 ## 3. [박스 모델:여백](https://developer.mozilla.org/ko/docs/Web/CSS/margin)
 
-* 개발자 도구 주황박스 -> margin(여백) 값  
-* content간의 간격
+* 개발자 도구 주황박스 -> margin(여백) 값   
+    ![cssbutton](/assets/images/Udemy/06/udemy06_toolbox.PNG)   
+* content 바깥쪽 여백 간격
 * padding과 똑같이 4가지 방법으로 작성이 가능하다.
 * body는 기본적으로 8px의 margin을 가지고 시작한다.
 

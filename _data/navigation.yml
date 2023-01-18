@@ -71,6 +71,10 @@ docs:
         url: /TIL/Udemy-TIL-HTML폼과테이블-03/
       - title: "TIL - TWD CSS기초"
         url: /TIL/Udemy-TIL-CSS기초-01/
+      - title: "TIL - TWD CSS선택자"
+        url: /TIL/Udemy-TIL-CSS선택자-02/
+      - title: "TIL - TWD CSS박스모델"
+        url: /TIL/Udemy-TIL-CSS박스모델-03/
 
 # docs:
 #   - title: "대목차"

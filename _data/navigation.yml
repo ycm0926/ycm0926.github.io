@@ -55,6 +55,8 @@ docs:
         url: /boj/1780-종이의-개수/
       - title: "[백준] [Class3] [Silver I] Z - 1074 (파이썬 / Python)"
         url: /boj/1074-Z/
+      - title: "[백준] [Class3] [Silver I] 볼 모으기 - 17615 (파이썬 / Python)"
+        url: /boj/17615-볼-모으기/
 
   - title: "Blog"
     children:

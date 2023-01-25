@@ -142,20 +142,20 @@ div {
 
 ## 4. [디스플레이 속성](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
-* inline
+### 1) inline
   * width와 height를 속성으로 지정해도 무시된다.
     * content의 크기에 따라 크기가 결정된다.
   * margin은 위 아래에는 적용 되지 않는다.
   * padding은 좌, 우는 공간과 시각적 모두 적용 되지만 위, 아래는 시각적으로는 보이지만 공간을 차지 하지는 않는다.
 
-* block
+### 2) block
   * 기본적으로 width값이 100% 반영된다.
   * width, height, margin, padding 속성이 모두 반영이 된다.
 
-* inline-block
-  * 줄바꿈이 이루어지지 않는다.
+### 3) inline-block
+  * inline처럼 줄바꿈이 이루어지지 않는다.
   * block처럼 width와 height를 지정 할 수 있다.
-  * 만약 width와 height를 지정하지 않을 경우, inline과 같이 content만큼 영역이 잡힌다.
+    * 만약 width와 height를 지정하지 않을 경우, inline과 같이 content만큼 영역이 잡힌다.
   * 대표적으로 span, button, input, select 태그 등에 사용한다.
 
 ```css
@@ -189,16 +189,16 @@ div {
 
 ## 5. [CSS UNITS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)(단위)
 
-* %
+### 1) %
   * 부모 요소, 폰트 크기 등 다양한 기준을 비율로 값을 결정한다.
   * 일반적으로 너비나 높이 지정에 가장 많이 사용된다.
 
-* em
+### 2) em
   * 부묘 요소와 똑같은 크기가 된다.
     * ex) 2em은 부모 요소보다 2배 크게 된다.
   * 단계적으로 중첩된다.
 
-* rem
+### 3) rem
   * root em은 html의 글씨 크기에 따라 비례한다.
   * 보통 예측하기 편해서 em보다 많이 사용한다.
 

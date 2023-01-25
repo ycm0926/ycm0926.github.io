@@ -77,6 +77,10 @@ docs:
         url: /TIL/Udemy-TIL-CSS선택자-02/
       - title: "TIL - TWD CSS박스모델"
         url: /TIL/Udemy-TIL-CSS박스모델-03/
+      - title: "TIL - TWD 유용한 CSS 속성들"
+        url: /TIL/Udemy-TIL-유용한CSS속성들-04/
+      - title: "TIL - TWD 반응형 CSS 및 Flexbox"
+        url: /TIL/Udemy-TIL-반응형CSS및Flexbox-05/
 
 # docs:
 #   - title: "대목차"

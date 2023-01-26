@@ -8,79 +8,28 @@ main:
     url: /search/
 
 docs:
-  - title: "이것이 코딩 테스트다"
+  - title: "📚Coding Test"
     children:
-      - title: "Ch3 Greedy 3-1"
-        url: /algorithm/Ch3-Greedy-1/
-      - title: "Ch3 Greedy 3-2"
-        url: /algorithm/Ch3-Greedy-2/
-      - title: "Ch4 Implementation 4-1"
-        url: /algorithm/Ch4-Implementation-1/
-      - title: "Ch4 Implementation 4-2"
-        url: /algorithm/Ch4-Implementation-2/
-      - title: "Ch5 DFS,BFS 5-1"
-        url: /algorithm/Ch5-DFS,BFS-1/
-      - title: "Ch5 DFS,BFS 5-2"
-        url: /algorithm/Ch5-DFS,BFS-2/
-      - title: "Ch5 DFS,BFS 5-3"
-        url: /algorithm/Ch5-DFS,BFS-3/
-      - title: "Ch6 Sorting 6-1"
-        url: /algorithm/Ch6-Sorting-1/
-      - title: "Ch6 Sorting 6-2"
-        url: /algorithm/Ch6-Sorting-2/
-      - title: "Ch7 Binary Search 7-1"
-        url: /algorithm/Ch7-BinarySearch-1/
-      - title: "Ch7 Binary Search 7-2"
-        url: /algorithm/Ch7-BinarySearch-2/
-      - title: "Ch8 Dynamic Programing 8-1"
-        url: /algorithm/Ch8-DynamicPrograming-1/
-      - title: "Ch8 Dynamic Programing 8-2"
-        url: /algorithm/Ch8-DynamicPrograming-2/
-      - title: "Ch9 Shortest Path 9-1"
-        url: /algorithm/Ch9-ShortestPath-1/
-      - title: "Ch9 Shortest Path 9-2"
-        url: /algorithm/Ch9-ShortestPath-2/
-      - title: "Ch10 Graph Theory 10-1"
-        url: /algorithm/Ch10-GraphTheory-1/
-      - title: "Ch10 Graph Theory 10-2"
-        url: /algorithm/Ch10-GraphTheory-2/
-        
-  - title: "Algorithm"
-    children:
-      - title: "[백준] [Bronze I] 분수찾기 - 1193 (파이썬 / Python)"
-        url: /boj/1193-분수찾기/
-      - title: "[백준] [Class3] [Silver II] 잃어버린 괄호 - 1541 (파이썬 / Python)"
-        url: /boj/1541-잃어버린-괄호/
-      - title: "[백준] [Class3] [Silver II] 종이의 개수 - 1780 (파이썬 / Python)"
-        url: /boj/1780-종이의-개수/
-      - title: "[백준] [Class3] [Silver I] Z - 1074 (파이썬 / Python)"
-        url: /boj/1074-Z/
-      - title: "[백준] [Class3] [Silver I] 볼 모으기 - 17615 (파이썬 / Python)"
-        url: /boj/17615-볼-모으기/
+      - title: "이것이 코딩 테스트다"
+        url: "/Algorithm"
+        category: "Algorithm"
 
-  - title: "Blog"
-    children:
-      - title: "유데미(Udemy) The Web Developer 부트캠프 2023 강의 수강"
-        url: /Blog/UdemyStart/
+      - title: "BOJ 오답노트"
+        url: "/BOJ"
+        category: "BOJ"
 
-  - title: "TIL"
+  - title: "💻Web Developer"
     children:
-      - title: "TIL - TWD HTML:기초"
-        url: /TIL/Udemy-TIL-HTML기초-01/
-      - title: "TIL - TWD HTML:시맨틱(Semantics)"
-        url: /TIL/Udemy-TIL-HTML시맨틱-02/
-      - title: "TIL - TWD HTML:폼과 테이블"
-        url: /TIL/Udemy-TIL-HTML폼과테이블-03/
-      - title: "TIL - TWD CSS기초"
-        url: /TIL/Udemy-TIL-CSS기초-01/
-      - title: "TIL - TWD CSS선택자"
-        url: /TIL/Udemy-TIL-CSS선택자-02/
-      - title: "TIL - TWD CSS박스모델"
-        url: /TIL/Udemy-TIL-CSS박스모델-03/
-      - title: "TIL - TWD 유용한 CSS 속성들"
-        url: /TIL/Udemy-TIL-유용한CSS속성들-04/
-      - title: "TIL - TWD 반응형 CSS 및 Flexbox"
-        url: /TIL/Udemy-TIL-반응형CSS및Flexbox-05/
+      - title: "The Web Developer 강의"
+        url: "/The Web Developer 2023"
+        category: "The Web Developer 2023"
+
+  - title: "🎉Blog"
+    children:
+      - title: "일상"
+        url: /Blog
+        category: "Blog"
+
 
 # docs:
 #   - title: "대목차"

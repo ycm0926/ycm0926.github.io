@@ -1,0 +1,26 @@
+---
+
+title:  "유데미(Udemy) The Web Developer 부트캠프 2023 강의 수강"
+categories: Blog
+tag: [Blog]
+toc: true
+toc_sticky: true
+author_profile: true
+sidebar:
+    nav: "docs"
+
+---
+
+# ⭐유데미 - The Web Developer 부트캠프 2023⭐
+
+[The Web Developer 부트캠프 2023 링크](https://www.udemy.com/course/the-web-developer-bootcamp-2021-korea/) 
+![유데미](/assets/images/Udemy/start.PNG)
+
+드디어 웹 공부 시작을 위해 유데미 결제.. 마침 세일 기간이라 만 원대에 결제 성공!! (유데미의 강의 가격은 대부분 10~20만 원선이다.) 웹을 전체적으로 배우면서 방향도 잡고, 뭐든 해볼 예정이다.
+
+많은 고민 끝에 좋은 후기들이 많고, 한글 자막이 지원되는 The Web Developer 부트캠프 2023으로 결정했다. 빠르게 듣고 괜찮으면 React 강의나 다른 것도 결제해보려고 한다. 세일할 때 사둘 걸 그랬나..? 자주 세일한다니깐 뭐 괜찮겠지??
+
+강의를 보면서 배운 것들을 나중에 바로 찾을 수 있게 정리하려고 한다.
+
+혼자서 하는 공부라 나태해질까 걱정이 되긴 하지만.. 그냥 해야지 뭐 가보자고 😂
+

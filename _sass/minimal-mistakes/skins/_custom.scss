@@ -23,7 +23,7 @@ $muted-text-color: #fff !default; // 최근 포스트, 날짜, 태그색
 $primary-color: #82DCFF !default; // 우상단 메뉴, 인용문, 표 등의 색
 $border-color: $primary-color !default; // 경계색
 $code-background-color: #4D5357 !default; // 인라인코드 배경색
-$code-background-color-dark: #473f3f !default; // 야간모드색
+$code-background-color-dark: #473f3f !default; // 다크모드색
 $form-background-color: mix(#000, $background-color, 15%) !default; // 뭐지?
 $footer-background-color: mix(#000, $background-color, 20%) !default; // 하단색
 $link-color: #82DCFF !default; // 하이퍼링크색

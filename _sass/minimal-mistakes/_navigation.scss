@@ -440,9 +440,14 @@
 .nav__list .nav__items {
   margin: 0;
   font-size: 1.25rem;
+  font-family: $sans-serif;
 
   a {
     color: inherit;
+    // 좌측 사이드바 밑줄 생성
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .active {

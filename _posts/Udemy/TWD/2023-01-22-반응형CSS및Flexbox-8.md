@@ -79,33 +79,83 @@ flex: 2 2 10%;
 
 ### 1) [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
 
-* 주축을 기준으로 Grid가 움직이면서 항목 사이 및 주위 공간 정렬 방식을 결정한다.
+* 주축을 기준으로 <U>전체 항목</U> 사이 및 주위 공간 정렬 방식을 결정한다.
 * start, center, end, space-between, space-around, space-evenly, baseline 등이 있다.
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="mdjjqgd" data-preview="true" data-editable="true" data-user="ycm0926" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ycm0926/pen/mdjjqgd">
+  justify-content</a> by Changmin Yang (<a href="https://codepen.io/ycm0926">@ycm0926</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ### 2) [justify-items](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
 
-* 주축을 기준으로 Grid가 움직이지 않은 상태에서 항목 사이 및 주위 공간 정렬 방식을 결정한다.
+* 주축을 기준으로 <U>개별 항목</U> 사이 및 주위 공간 정렬 방식을 결정한다.
 * stretch, center, start, end, baseline 등이 있다.
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zYLLPea" data-preview="true" data-editable="true" data-user="ycm0926" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ycm0926/pen/zYLLPea">
+  justify-items</a> by Changmin Yang (<a href="https://codepen.io/ycm0926">@ycm0926</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+### 3) [justify-self](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)
+
+* justify-items/content는 부모 요소의 자식들 전체를 묶어서 정렬을 하지만, justify-self은
+부모 요소의 자식 아이템들 정렬을 <U>개별로 설정</U> 할 때 사용한다.
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjBBOem" data-preview="true" data-editable="true" data-user="ycm0926" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ycm0926/pen/JjBBOem">
+  justify-self</a> by Changmin Yang (<a href="https://codepen.io/ycm0926">@ycm0926</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## 4. arlign
 
 ### 1) [align-content](https://developer.mozilla.org/ko/docs/Web/CSS/align-content)
 
-* 행이 1줄이면 의미가 없으며, 2줄 이상이면 교차축을 기준으로 전체 정렬 방식을 결정한다. -> `flex-wrap: warp` 또는 `flex-wrap: wrap-reverse`가 적용되야 한다.
+* 행이 1줄이면 의미가 없으며, 2줄 이상이면 교차축을 기준으로 <U>전체 항목</U>이 움직이면서 line 정렬 방식을 결정한다. line 정렬 이므로, -> `flex-wrap: warp` 또는 `flex-wrap: wrap-reverse`가 적용되야 한다.
 * start, center, end, space-between, space-around, baseline 등이 있다.
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwBBjeX" data-preview="true" data-editable="true" data-user="ycm0926" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ycm0926/pen/RwBBjeX">
+  align-content</a> by Changmin Yang (<a href="https://codepen.io/ycm0926">@ycm0926</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ### 2) [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 
-* 한 행의 교차축을 기준으로 항목 사이 및 주위 공간 정렬 방식을 결정한다.
+* 한 행의 교차축을 기준으로 <U>개별 항목</U> 전체의 정렬 방식을 결정한다.
 * stretch, center, start, end, baseline 등이 있다.
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GRBBOdV" data-preview="true" data-editable="true" data-user="ycm0926" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ycm0926/pen/GRBBOdV">
+  align-items</a> by Changmin Yang (<a href="https://codepen.io/ycm0926">@ycm0926</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ### 3) [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
 
-* `align-items`와 개념은 비슷하며, 개별요소를 옮길 때 사용한다.
+* align-items/content는 부모 요소의 자식들 전체를 묶어서 정렬을 하지만, align-self은
+부모 요소의 자식 아이템들 정렬을 각각 <U>개별로 설정<U> 할 때 사용한다.
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LYBBWNK" data-preview="true" data-editable="true" data-user="ycm0926" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ycm0926/pen/LYBBWNK">
+  justify</a> by Changmin Yang (<a href="https://codepen.io/ycm0926">@ycm0926</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 > baseline
 > * 텍스트의 기준선에 맞춰 정렬한다.
 > * 요소마다 높이가 다르다면 유용
+
+* 강의에서 실험한 코드
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNKMWEW" data-preview="true" data-editable="true" data-user="ycm0926" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ycm0926/pen/WNKMWEW">

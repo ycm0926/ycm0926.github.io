@@ -25,7 +25,7 @@ sidebar:
 * 트리 자료구조는 부모 -> 자식으로 내려오는 계층적인 모델이다.
 * 트리는 수학에서는 무방향 그래프로 간주하지만, 컴퓨터공학 분야에서는 방향 그래프로 간주한다.
 
-![그래프트리](/assets/images/ch10/ch-10-그래프트리.png)
+![그래프트리](/assets/images/algorithm/ch10/ch-10-그래프트리.png)
 
 앞서 그래프의 구현 방법에는 2가지가 있다고 했다. 두 방식은 메모리와 속도 측면에서 구별된다.
 
@@ -47,11 +47,11 @@ sidebar:
 
 # 📚 서로소 집합 (Disjoint Sets) 알고리즘
 
-**서로소 집합** (Disjoint Sets)란 <span style="background-color:#baddfe">공통 원소가 없는 두 집합</span>을 의미한다.
+**서로소 집합** (Disjoint Sets)란 <span style="background-color:#8B03FF">공통 원소가 없는 두 집합</span>을 의미한다.
 
-![서로소집합](/assets/images/ch10/ch-10-서로소집합.png)
+![서로소집합](/assets/images/algorithm/ch10/ch-10-서로소집합.png)
 
-* 서로소 집합 자료구조란 <span style="background-color:#baddfe">서로소 부분 집합들로 나누어진 원소들의 데이터를 처리하기 위한 자료구조</span>라고 할 수 있다.
+* 서로소 집합 자료구조란 <span style="background-color:#8B03FF">서로소 부분 집합들로 나누어진 원소들의 데이터를 처리하기 위한 자료구조</span>라고 할 수 있다.
 * 서로소 집합 자료구조는 두 종류의 연산을 지원한다.
   * **합집합(Union)**: 두 개의 원소가 포함된 집합을 하나의 집합으로 합치는 연산이다.
   * **찾기(Find)**: 특정한 원소가 속한 집합이 어떤 집합인지 알려주는 연산이다.
@@ -69,26 +69,26 @@ sidebar:
 
 ## 서로소 집합 자료구조: 동작 과정 살펴보기
 
-![서로소동작과정](/assets/images/ch10/ch-10-서로소동작과정.png)
+![서로소동작과정](/assets/images/algorithm/ch10/ch-10-서로소동작과정.png)
 
-![서로소동작과정](/assets/images/ch10/ch-10-서로소동작과정2.png)
+![서로소동작과정](/assets/images/algorithm/ch10/ch-10-서로소동작과정2.png)
 
-![서로소동작과정](/assets/images/ch10/ch-10-서로소동작과정3.png)
+![서로소동작과정](/assets/images/algorithm/ch10/ch-10-서로소동작과정3.png)
 
-![서로소동작과정](/assets/images/ch10/ch-10-서로소동작과정4.png)
+![서로소동작과정](/assets/images/algorithm/ch10/ch-10-서로소동작과정4.png)
 
-![서로소동작과정](/assets/images/ch10/ch-10-서로소동작과정5.png)
+![서로소동작과정](/assets/images/algorithm/ch10/ch-10-서로소동작과정5.png)
 
 
 ## 서로소 집합 자료구조: 연결성
 * 서로소 집합 자료구조에서는 **연결성**을 통해 손쉽게 집합의 형태를 확인할 수 있다.
 
-![서로소동작과정](/assets/images/ch10/ch-10-서로소동작과정6.png)
+![서로소동작과정](/assets/images/algorithm/ch10/ch-10-서로소동작과정6.png)
 
 * 기본적인 형태의 서로소 집합 자료구조에서는 루트 노드에 즉시 접근할 수 없다.
   * 루트 노드를 찾기 위해 <U>부모 테이블을 계속해서 확인</U>하며 거슬러 올라가야 한다.
 
-![서로소동작과정](/assets/images/ch10/ch-10-서로소동작과정7.png)
+![서로소동작과정](/assets/images/algorithm/ch10/ch-10-서로소동작과정7.png)
 
 ## 서로소 집합 자료구조: 구현 방법
 ```python
@@ -152,7 +152,7 @@ for i in range(1, v + 1):
   * 다음과 같이 {1, 2, 3, 4, 5]의 총 5개의 원소가 존재하는 상황을 확인했을 경우
   * 수행된 연산들: Union(4,5), Union(3,4), Union(2,3), Union(1,2)
 
-![서로소동작문제점](/assets/images/ch10/ch-10-서로소동작문제점.png)
+![서로소동작문제점](/assets/images/algorithm/ch10/ch-10-서로소동작문제점.png)
 
 ## 서로소 집합 자료 구조: 경로 압축
 * 찾기(Find) 함수를 최적화하기 위한 방법으로 경로 압축(Path Compression)을 이용할 수 있음
@@ -171,7 +171,7 @@ def find_parent(parent, x):
 * 동일한 예시에 대해서 모든 합집합(Union) 함수를 처리한 후 각 원소에 대하여 찾기(Find) 함수를 수행하면 다음과 같이 부모 테이블이 갱신
 * 기본적인 방법에 비하여 시간 복잡도가 개선됨
   
-![서로소동작문제점](/assets/images/ch10/ch-10-서로소동작문제점2.png)
+![서로소동작문제점](/assets/images/algorithm/ch10/ch-10-서로소동작문제점2.png)
 
 ```python
 # 특정 원소가 속한 집합을 찾기
@@ -246,13 +246,13 @@ for i in range(1, v + 1):
 
 ## 서로소 집합을 활용한 사이클 판별: 동작 과정 살펴보기
 
-![서로소사이클](/assets/images/ch10/ch-10-사이클.png)
+![서로소사이클](/assets/images/algorithm/ch10/ch-10-사이클.png)
 
-![서로소사이클](/assets/images/ch10/ch-10-사이클2.png)
+![서로소사이클](/assets/images/algorithm/ch10/ch-10-사이클2.png)
 
-![서로소사이클](/assets/images/ch10/ch-10-사이클3.png)
+![서로소사이클](/assets/images/algorithm/ch10/ch-10-사이클3.png)
 
-![서로소사이클](/assets/images/ch10/ch-10-사이클4.png)
+![서로소사이클](/assets/images/algorithm/ch10/ch-10-사이클4.png)
 
 
 ```python
@@ -313,7 +313,7 @@ else:
 * <u>그래프가 있을 때 모든 노드를 포함하면서 사이클이 존재하지 않는 부분 그래프</u>를 의미한다.
   * 모든 노드가 포함되어 연결되면서 사이클이 존재하지 않는다는 조건은 트리의 성립 조건이기도 하다.
 
-![신장트리](/assets/images/ch10/ch-10-신장트리.png)
+![신장트리](/assets/images/algorithm/ch10/ch-10-신장트리.png)
 * 신장 트리가 아닌 부분은 1번 노드가 포함되어 있지 않으며, 사이클이 존재한다.
 
 ---
@@ -321,7 +321,7 @@ else:
 * 예를 들어 N개의 도시가 존재하는 상황에서 두 도시 사이에 도로를 놓아 **전체 도시가 서로 연결**될 수 있는 도로를 설치하는 경우를 생각한다.
   * 두 도시 A, B를 선택했을 때 A에서 B로 이동하는 경로가 반드시 존재하도록 도로를 설치
 
-![최소신장트리](/assets/images/ch10/ch-10-최소신장트리.png)
+![최소신장트리](/assets/images/algorithm/ch10/ch-10-최소신장트리.png)
 
 ## 크루스칼 알고리즘
 * 대표적인 **최소 신장 트리 알고리즘**
@@ -338,27 +338,27 @@ else:
 
 ## 크루스칼 알고리즘: 동작 과정
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작2.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작2.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작3.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작3.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작4.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작4.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작5.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작5.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작6.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작6.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작7.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작7.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작8.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작8.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작9.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작9.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작10.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작10.png)
 
-![크루스칼](/assets/images/ch10/ch-10-크루스칼동작11.png)
+![크루스칼](/assets/images/algorithm/ch10/ch-10-크루스칼동작11.png)
 
 ```python
 # 특정 원소가 속한 집합을 찾기
@@ -431,10 +431,10 @@ print(result)
   * 표준 라이브러리를 이용해 E개의 데이터를 정렬하기 위한 시간 복잡도는 O(ElogE)
 
 # 📚 위상 정렬 (Topology Sort)
-* <span style="background-color:#baddfe">사이클이 없는 방향 그래프의 모든 노드를 '방향성에 거스르지 않도록 순서대로 나열하는 것'</span>을 의미
+* <span style="background-color:#8B03FF">사이클이 없는 방향 그래프의 모든 노드를 '방향성에 거스르지 않도록 순서대로 나열하는 것'</span>을 의미
 * 예시) 선수과목을 고려한 학습 순서 설정
 
-![위상정렬](/assets/images/ch10/ch-10-위상정렬.png)
+![위상정렬](/assets/images/algorithm/ch10/ch-10-위상정렬.png)
 
 * 위 세 과목을 모두 듣기 위한 **적절한 학습 순서**는?
   * 자료구조 -> 알고리즘 -> 고급 알고리즘 <span style="color:blue">(O) 
@@ -444,7 +444,7 @@ print(result)
 * 진입차수(Indegree): 특정한 노드로 들어오는 간선의 개수
 * 진출차수(Outdegree): 특정한 노드에서 나가는 간선의 개수
 
-![진입차수 진출차수](/assets/images/ch10/ch-10-진입차수와진출차수.png)
+![진입차수 진출차수](/assets/images/algorithm/ch10/ch-10-진입차수와진출차수.png)
 
 ## 위상 정렬 알고리즘
 * **큐**를 이용하는 **위상 정렬 알고리즘의 동작 과정**은 다음과 같다. (DFS로도 가능)
@@ -460,26 +460,26 @@ print(result)
 * 위상 정렬을 수행할 그래프를 준비
   * 이때 그래프는 사이클이 없는 방향 그래프 (DAG)여야 한다.
 
-![위상동작예시](/assets/images/ch10/ch-10-위상정렬동작예시.png)
+![위상동작예시](/assets/images/algorithm/ch10/ch-10-위상정렬동작예시.png)
 
-![위상정렬동작](/assets/images/ch10/ch-10-위상정렬동작.png)
+![위상정렬동작](/assets/images/algorithm/ch10/ch-10-위상정렬동작.png)
 
-![위상정렬동작](/assets/images/ch10/ch-10-위상정렬동작2.png)
+![위상정렬동작](/assets/images/algorithm/ch10/ch-10-위상정렬동작2.png)
 * 본 예제는 더 작은 번호의 노드가 우선으로 큐에 들어가게끔 가정
 
-![위상정렬동작](/assets/images/ch10/ch-10-위상정렬동작3.png)
+![위상정렬동작](/assets/images/algorithm/ch10/ch-10-위상정렬동작3.png)
 
-![위상정렬동작](/assets/images/ch10/ch-10-위상정렬동작4.png)
+![위상정렬동작](/assets/images/algorithm/ch10/ch-10-위상정렬동작4.png)
 
-![위상정렬동작](/assets/images/ch10/ch-10-위상정렬동작5.png)
+![위상정렬동작](/assets/images/algorithm/ch10/ch-10-위상정렬동작5.png)
 
-![위상정렬동작](/assets/images/ch10/ch-10-위상정렬동작6.png)
+![위상정렬동작](/assets/images/algorithm/ch10/ch-10-위상정렬동작6.png)
 
-![위상정렬동작](/assets/images/ch10/ch-10-위상정렬동작7.png)
+![위상정렬동작](/assets/images/algorithm/ch10/ch-10-위상정렬동작7.png)
 
-![위상정렬동작](/assets/images/ch10/ch-10-위상정렬동작8.png)
+![위상정렬동작](/assets/images/algorithm/ch10/ch-10-위상정렬동작8.png)
 
-![위상정렬동작](/assets/images/ch10/ch-10-위상정렬동작9.png)
+![위상정렬동작](/assets/images/algorithm/ch10/ch-10-위상정렬동작9.png)
 
 ## 위상 정렬 알고리즘: 특징
 * 위상 정렬은 DAG에 대해서만 수행할 수 있다.

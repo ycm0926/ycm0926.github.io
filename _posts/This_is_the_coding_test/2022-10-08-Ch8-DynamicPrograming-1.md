@@ -13,10 +13,10 @@ sidebar:
 
 # 📚 동적 프로그레밍 (Dynamic Programing) 알고리즘
 
-**동적 프로그래밍 (Dynamic Programing)** 이란 <span style="background-color:#baddfe">메모리를 적절히 사용하여 수행 시간 효율성을 비약적으로 향상시키는 방법.</span>
+**동적 프로그래밍 (Dynamic Programing)** 이란 <span style="background-color:#8B03FF">메모리를 적절히 사용하여 수행 시간 효율성을 비약적으로 향상시키는 방법.</span>
 * 이미 계산된 결과(작은 문제)는 별도의 메모리 영역에 저장하여 다시 계산하지 않도록 함.
-* 다이나믹 프로그래밍의 구현은 일반적으로 <span style="background-color:#baddfe">두 가지 방식(탑다운과 보텀업)으로 구성.</span>
-* 다이나믹 프로그래밍은 <span style="background-color:#baddfe">동적 계획법</span>이라고도 부름.
+* 다이나믹 프로그래밍의 구현은 일반적으로 <span style="background-color:#8B03FF">두 가지 방식(탑다운과 보텀업)으로 구성.</span>
+* 다이나믹 프로그래밍은 <span style="background-color:#8B03FF">동적 계획법</span>이라고도 부름.
 * DP는 다음의 조건을 만족할 때 사용할 수 있다.
   1. 최적 부분 구조 (Optimal Substructure)
        * 큰 문제를 작은 문제로 난루 수 있으며 작은 문제의 답은 큰 문제를 해결할 수 있다.
@@ -39,7 +39,7 @@ sidebar:
   * a(1) = 1, a(2) = 2
     * 단, 1번째 피보나치 수 = 1, 2번째 피보나치 수 = 1
 
-![피보나치](/assets/images/ch-08-피보나치.png)
+![피보나치](/assets/images/algorithm/ch8/ch-08-피보나치.png)
 
 * 프로그래밍 에서는 이러한 수열을 **배열**이나 **리스트**로 표현할 수 있다.
 * 수학적 점화식을 프로그래밍으로 표현하려면 재귀 함수를 사용하면 간단하다.
@@ -54,7 +54,7 @@ print(fibo(4))
 ```
 ## 피보나치 수열의 시간복잡도 분석
 
-![피보나치](/assets/images/ch-08-피보나치2.png)
+![피보나치](/assets/images/algorithm/ch8/ch-08-피보나치2.png)
 
 
 * f(n)에서 n이 커질수록 호출 수가 많아지므로 좋지않은 코드이다.
@@ -123,12 +123,12 @@ print(d[n])
 
 이미 계산된 결과를 메모리에 저장하여 다음과 같이 색칠된 노드만 처리할 것을 기대 할 수 있다.
 
-![피보나치](/assets/images/ch-08-피보나치3.png)
+![피보나치](/assets/images/algorithm/ch8/ch-08-피보나치3.png)
 
 
 실제로 호출되는 함수는 색칠된 함수만 호출된다.
 
-![피보나치](/assets/images/ch-08-피보나치4.png)
+![피보나치](/assets/images/algorithm/ch8/ch-08-피보나치4.png)
 
 * 메모이제이션을 이용하는 경우 시간 복잡도는 O(N)
 

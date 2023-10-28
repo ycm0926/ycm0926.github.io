@@ -135,7 +135,7 @@ else:
 
 **이진 탐색과 순차 탐색 비교**
 
-![이진vs순차](/assets/images/algorithm/ch7/이진vs순차.gif)
+![이진vs순차](/assets/images/algorithm/ch7/ch-07-이진vs순차.gif)
 
 # 📚 트리 자료구조
 * 노드와 노드의 연결로 표현하며 여기에서 노드는 정보의 단위로서 어떠한 정보를 가지고 있는 개체로 이해할 수 있음.
@@ -143,7 +143,7 @@ else:
 
 ## 트리의 특징
 
-![트리](/assets/images/algorithm/ch7/트리.png)
+![트리](/assets/images/algorithm/ch7/ch-07-트리.png)
 
 >* 트리는 부모 노드와 자식 노드의 관계로 표현한다.
 >* 트리의 최상단 노드를 루트 노드라고 한다.
@@ -156,7 +156,7 @@ else:
 * 이진 탐색이 동작하도록 고안된 형태.
 
 ## 이진 탐색 트리의 특징
-![이진트리](/assets/images/algorithm/ch7/이진트리.png)
+![이진트리](/assets/images/algorithm/ch7/ch-07-이진트리.png)
 
 >* 부모 노드보다 왼쪽 자식 노드가 작다.
 >* 부모 노드보다 오른쪽 자식 노드가 크다.

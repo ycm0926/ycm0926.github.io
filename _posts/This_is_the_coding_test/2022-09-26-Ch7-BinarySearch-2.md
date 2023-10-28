@@ -210,13 +210,13 @@ for i in x:
 문제에서 제시된 예시를 통해 그림으로 이해해 보자
 
 [Step 1] 시작점: 0, 끝점: 19, 중간점: 9 이때 필요한 떡의 크기: M = 6이므로, 결과 저장
-![떡볶이1](/assets/images/떡볶이1.png)
+![떡볶이1](/assets/images/algorithm/ch7/ch-07-떡볶이1.png)
 [Step 2] 시작점: 10, 끝점: 19, 중간점: 14 이때 필요한 떡의 크기: M = 6이므로, 결과 저장
-![떡볶이2](/assets/images/떡볶이2.png)
+![떡볶이2](/assets/images/algorithm/ch7/ch-07-떡볶이2.png)
 [Step 3] 시작점: 15, 끝점: 19, 중간점: 17 이때 필요한 떡의 크기: M = 6이므로, 결과 저장
-![떡볶이3](/assets/images/떡볶이3.png)
+![떡볶이3](/assets/images/algorithm/ch7/ch-07-떡볶이3.png)
 [Step 4] 시작점: 15, 끝점: 16, 중간점: 15 이때 필요한 떡의 크기: M = 6이므로, 결과 저장
-![떡볶이4](/assets/images/떡볶이4.png)
+![떡볶이4](/assets/images/algorithm/ch7/ch-07-떡볶이4.png)
 
 * 이러한 이진 탐색 과정을 반복하면 답을 도출할 수 있다
 * 중간점의 값은 시간이 지날수록 '최적화된 값'이 되기 때문에, 과정을 반복하면서 얻을 수 있는 떡의 길이 합이

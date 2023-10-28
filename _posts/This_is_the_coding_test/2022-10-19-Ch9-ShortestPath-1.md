@@ -26,7 +26,7 @@ sidebar:
 
 ## 다익스트라 최단 경로 알고리즘
 
-![다익스트라](/assets/images/algorithm/ch-09-최단경로그래프.png)
+![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-최단경로그래프.png)
 
 * **다익스트라 (Dijkstra)** 최단 경로 알고리즘은 그래프에서 여러개의 노드가 있을 때, 특정한 노드에서 출발하여 다른 노드로 가는 각각의 최단 경로를 구해주는 알고리즘이다.
 * '음의 간선'이 없을 때 정삭적으로 동작한다.
@@ -49,26 +49,26 @@ sidebar:
 * 마지막 노드는 나머지 노드들의 최단 거리가 확정된 상태이므로 더 이상 테이블 갱신이 될 수 없어 확인할 필요가 없다.
 * 완벽한 형태의 최단 경로를 구하려면 소스코드에 추가적인 기능을 더 넣어야 한다.
 
-![다익스트라](/assets/images/algorithm/ch-09-다익스트라.png)
+![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라.png)
 * 방문하지 않은 노드 중 가장 짧은 노드는 값이 0인 1번 노드로 출발
 
-![다익스트라](/assets/images/algorithm/ch-09-다익스트라2.png)
+![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라2.png)
 * 1번 노드와 연결된 모든 간선을 하나씩 확인
 
-![다익스트라](/assets/images/algorithm/ch-09-다익스트라3.png)
+![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라3.png)
 * 4번 노드를 거쳐 3, 5번 노드 비용과 1번 노드에서 3, 5번 노드의 비용 비교
 
-![다익스트라](/assets/images/algorithm/ch-09-다익스트라4.png)
+![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라4.png)
 * 일반적으로 같은 값일 경우 노드 번호가 더 낮은 값을 선택.
 
 
-![다익스트라](/assets/images/algorithm/ch-09-다익스트라5.png)
+![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라5.png)
 
 
-![다익스트라](/assets/images/algorithm/ch-09-다익스트라6.png)
+![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라6.png)
 
 
-![다익스트라](/assets/images/algorithm/ch-09-다익스트라7.png)
+![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라7.png)
 * 마지막 노드는 처리하지 않아도 전체 결과를 얻음
   * 나머지 5개 노드에 대한 최단 거리가 확정된 상태이므로 더 이상 테이블 갱신 불가
 
@@ -198,7 +198,7 @@ for i in range(1, n+1):
 > * 자료구조와 알고리즘에서는 항상 최악의 상황을 고려해야 하는데 만약 n 개의 데이터 모두 최악의 경우에 놓인다면 **$n^2$**의 수행 시간을 갖게 된다.
 > * 힙의 경우 모두 최악의 상황에 놓인다 가정해도 **$nlogn$**의 수행 시간을 갖는다.
 > 
-> ![힙](/assets/images/algorithm/ch-09-힙시간비교.png)
+> ![힙](/assets/images/algorithm/ch9/ch-09-힙시간비교.png)
 
 
 **힙 라이브러리 사용 예제: 최소 힙**
@@ -234,9 +234,9 @@ print(result)
 * n개의 데이터를 넣고 빼기 때문에 전체 시간복잡도 $O(NlogN)$
   * 병합, 퀵 정렬과 비슷한 시간복잡도
 * 힙 동작 과정
-  ![힙](/assets/images/algorithm/ch-09-힙.png)
+  ![힙](/assets/images/algorithm/ch9/ch-09-힙.png)
 
-  ![힙](/assets/images/algorithm/ch-09-힙2.png)
+  ![힙](/assets/images/algorithm/ch9/ch-09-힙2.png)
 
 #### 우선순위 큐 설명
 * <span style="background-color:#8B03FF">우선순위가 가장 높은 데이터를 가장 먼저 삭제</span>하는 자료구조.
@@ -251,23 +251,23 @@ print(result)
 | 우선순위 큐(Priority) | 가장 우선순위가 높은 데이터 |
 
 ### 다익스트라 알고리즘: 우선순위 큐 동작 과정
-![우선순위큐](/assets/images/algorithm/ch-09-우선순위큐.png)
+![우선순위큐](/assets/images/algorithm/ch9/ch-09-우선순위큐.png)
 
-![우선순위큐](/assets/images/algorithm/ch-09-우선순위큐2.png)
+![우선순위큐](/assets/images/algorithm/ch9/ch-09-우선순위큐2.png)
 
-![우선순위큐](/assets/images/algorithm/ch-09-우선순위큐3.png)
+![우선순위큐](/assets/images/algorithm/ch9/ch-09-우선순위큐3.png)
 
-![우선순위큐](/assets/images/algorithm/ch-09-우선순위큐4.png)
+![우선순위큐](/assets/images/algorithm/ch9/ch-09-우선순위큐4.png)
 
-![우선순위큐](/assets/images/algorithm/ch-09-우선순위큐5.png)
+![우선순위큐](/assets/images/algorithm/ch9/ch-09-우선순위큐5.png)
 
-![우선순위큐](/assets/images/algorithm/ch-09-우선순위큐6.png)
+![우선순위큐](/assets/images/algorithm/ch9/ch-09-우선순위큐6.png)
 
-![우선순위큐](/assets/images/algorithm/ch-09-우선순위큐7.png)
+![우선순위큐](/assets/images/algorithm/ch9/ch-09-우선순위큐7.png)
 
-![우선순위큐](/assets/images/algorithm/ch-09-우선순위큐8.png)
+![우선순위큐](/assets/images/algorithm/ch9/ch-09-우선순위큐8.png)
 
-![우선순위큐](/assets/images/algorithm/ch-09-우선순위큐9.png)
+![우선순위큐](/assets/images/algorithm/ch9/ch-09-우선순위큐9.png)
 
 ```python
 import heapq
@@ -374,15 +374,15 @@ for i in range(1, n+1):
 
 ## 플로이드 워셜 알고리즘: 동작 과정
 
-![플로이드워셜](/assets/images/algorithm/ch-09-플로이드워셜.png)
+![플로이드워셜](/assets/images/algorithm/ch9/ch-09-플로이드워셜.png)
 
-![플로이드워셜](/assets/images/algorithm/ch-09-플로이드워셜2.png)
+![플로이드워셜](/assets/images/algorithm/ch9/ch-09-플로이드워셜2.png)
 
-![플로이드워셜](/assets/images/algorithm/ch-09-플로이드워셜3.png)
+![플로이드워셜](/assets/images/algorithm/ch9/ch-09-플로이드워셜3.png)
 
-![플로이드워셜](/assets/images/algorithm/ch-09-플로이드워셜4.png)
+![플로이드워셜](/assets/images/algorithm/ch9/ch-09-플로이드워셜4.png)
 
-![플로이드워셜](/assets/images/algorithm/ch-09-플로이드워셜5.png)
+![플로이드워셜](/assets/images/algorithm/ch9/ch-09-플로이드워셜5.png)
 
 ```python
 INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정

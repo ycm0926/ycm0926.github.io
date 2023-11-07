@@ -26,7 +26,7 @@ sidebar:
 
 ## 다익스트라 최단 경로 알고리즘
 
-![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-최단경로그래프.png)
+![다익스트라](/assets/images/algorithm/ch9/ch-09-최단경로그래프.png)
 
 * **다익스트라 (Dijkstra)** 최단 경로 알고리즘은 그래프에서 여러개의 노드가 있을 때, 특정한 노드에서 출발하여 다른 노드로 가는 각각의 최단 경로를 구해주는 알고리즘이다.
 * '음의 간선'이 없을 때 정삭적으로 동작한다.
@@ -49,26 +49,26 @@ sidebar:
 * 마지막 노드는 나머지 노드들의 최단 거리가 확정된 상태이므로 더 이상 테이블 갱신이 될 수 없어 확인할 필요가 없다.
 * 완벽한 형태의 최단 경로를 구하려면 소스코드에 추가적인 기능을 더 넣어야 한다.
 
-![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라.png)
+![다익스트라](/assets/images/algorithm/ch9/ch-09-다익스트라.png)
 * 방문하지 않은 노드 중 가장 짧은 노드는 값이 0인 1번 노드로 출발
 
-![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라2.png)
+![다익스트라](/assets/images/algorithm/ch9/ch-09-다익스트라2.png)
 * 1번 노드와 연결된 모든 간선을 하나씩 확인
 
-![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라3.png)
+![다익스트라](/assets/images/algorithm/ch9/ch-09-다익스트라3.png)
 * 4번 노드를 거쳐 3, 5번 노드 비용과 1번 노드에서 3, 5번 노드의 비용 비교
 
-![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라4.png)
+![다익스트라](/assets/images/algorithm/ch9/ch-09-다익스트라4.png)
 * 일반적으로 같은 값일 경우 노드 번호가 더 낮은 값을 선택.
 
 
-![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라5.png)
+![다익스트라](/assets/images/algorithm/ch9/ch-09-다익스트라5.png)
 
 
-![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라6.png)
+![다익스트라](/assets/images/algorithm/ch9/ch-09-다익스트라6.png)
 
 
-![다익스트라](/assets/images/algorithm/ch9/ch9/ch-09-다익스트라7.png)
+![다익스트라](/assets/images/algorithm/ch9/ch-09-다익스트라7.png)
 * 마지막 노드는 처리하지 않아도 전체 결과를 얻음
   * 나머지 5개 노드에 대한 최단 거리가 확정된 상태이므로 더 이상 테이블 갱신 불가
 
